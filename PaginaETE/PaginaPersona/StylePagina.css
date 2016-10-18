@@ -12,10 +12,16 @@ body{
   background: #ffffff url("fox.png") no-repeat 300px 70px;
     margin-right: 200px;
   background-attachment: fixed;
+background-size: auto;
 }
 img{
-  width: 25px;
-  height: 40px;
-  border-radius: 50px;
-  image-orientation: auto;
+
+}
+pre{
+  font-family: "Comic Sans MS", cursive, sans-serif
+}
+
+#encabezado{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 35px;
 }
