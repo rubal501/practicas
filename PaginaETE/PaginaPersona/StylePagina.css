@@ -1,3 +1,19 @@
+title{
+  display: none;
+}
 table{
   font-size: 31px;
+}
+pre{
+  font-size: 25px;
+  font: arial;
+}
+body{
+  background: #ffffff url("fox.png") no-repeat 300px 70px;
+    margin-right: 200px;
+  background-attachment: fixed;
+}
+img{
+  width: 25px;
+  height: 40px;
 }
