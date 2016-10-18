@@ -16,4 +16,6 @@ body{
 img{
   width: 25px;
   height: 40px;
+  border-radius: 50px;
+  image-orientation: auto;
 }
