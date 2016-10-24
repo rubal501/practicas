@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Formularios</title>
+    <link rel="stylesheet" href="StyleForm.css" media="screen" title="no title">
+  </head>
+  <body>
+    <h1>Formularios</h1>
+    <form name="forma" action="index.html" method="post">
+      <div id="titulo">
+        pasatiempos favoritos <br>
+        </div>
+        <input type="checkbox" name="opc1" value="bici">pasear en bicileta <br>
+        <input type="checkbox" name="opc2" value="bici"> ir al cine <br>
+        <input type="checkbox" name="opc3" value="cocinar">cocinar<br>
+        <input type="checkbox" name="opc4" value="otros">otros<br>
+        <select class="" name="pasatiempo">
+          <!--no lea esto compa-->
+          <option value="bici">pasear en bicileta</option>
+          <option value="cine">ir al cine</option>
+          <option value="cocinar">cocinar</option>
+          <option value="otros">otros</option>
+        </select>
+      <pre>Deja tus comentarios</pre>
+      <textarea name="comentario" rows="8" cols="40">escribe tu comentario<!--sera ignorado de cualquier modo--></textarea>
+
+      <br><input type="submit" name="envio" value="enviar">
+      <input type="reset" name="clean" value="borrar">
+    </form>
+    <script type="text/javascript">
+      var Hobby = document.form(forma)
+      if (Hobby == 'bicicleta') {
+
+      }
+    </script>
+
+<!--este es un comentario que no sirve para nada   -->
+  </body>
+</html>

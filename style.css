@@ -1,0 +1,16 @@
+body{
+  background-color: white;
+}
+title{
+  font-family: serif;
+  font-size: 20px;
+}
+form{
+  color: #ed6415;
+  font-size: 25px;
+  font-family: ravie;
+}
+input{
+  font-style: italic;
+  visibility: visible;
+}
