@@ -1,3 +1,21 @@
-title{
-  font-family: "Comic Sans MS", cursive, sans-serif
+h1{
+  font-style: italic;
+  font-size: 45px;
+
+}
+body{
+  background-color: #32d3bb;
+}
+p{
+  font-family: "Times New Roman", Georgia, Serif;
+  font-size: 19px;
+}
+input{
+  font-size: 20px;
+}
+pre{
+  font-size: 20px;
+}
+textarea{
+  text-align: center;
 }
