@@ -6,24 +6,52 @@
     <link rel="stylesheet" href="Exam.css" media="screen" title="no title">
   </head>
   <body>
-<h1>examen </h1>
-<form action="exa.php" method="post">
+<h1>EXAMEN</h1>
+<form action="Exa.php" method="post">
 <pre>nombre:<input type="text" name="nom" >
 Num.Cta:<input type="text" name="num" maxlength="9" size="9">
+Grupo: <input type="text" name="grupo" maxlength="3" size="3">
 
-    1.Cual es el sentido de la vida
-    <textarea name="question1" rows="8" cols="40">escribalo usando prosa</textarea>
-    2.Que compone un desayuno FrutiFantastico?
+    <p>1.Que es la fuerza?</p>
+    <textarea name="question1" rows="8" cols="40">escribalo de forma de haiku</textarea>
+    <p>2.Que inspira a los sith?</p>
     <select  name="question2">
-      <option value="fruta">fruta</option>
-      <option value="leche">leche</option>
-      <option value="frootloops">frootloops</option>
-      <option value="ambas">amba</option>
+      <option value="fruta">el odio</option>
+      <option value="leche">el miedo</option>
+      <option value="frootloops">la avaricia</option>
+      <option value="ambas">todas las anteriores</option>
     </select>
-    3.Quien destruyo la primera estrella de la muerte durante la batalla de yavin4?
+    <p>3.Quien destruyo la primera estrella de la muerte durante la batalla de yavin4?</p>
     <input type="text" name="question3" >
-    4.Quien destruyo la segunda estrella de la muerte?
-    <input type="text" name="question" value="">
+    <p>4.Quien destruyo la segunda estrella de la muerte?</p>
+    <input type="text" name="question4" >
+    <p>5.En donde perdio la mano luke?</p>
+    <input type="radio" name="question5" value="A" >Alderan
+    <input type="radio" name="question5" value="B">Hoth
+    <input type="radio" name="question5" value="C">Bespin
+    <p>6.Cual fue la orden que marco el fin de la orden jedi?</p>.
+    <input type="radio" name="question6" value="A">94
+    <input type="radio" name="question6" value="B">66
+    <input type="radio" name="question6" value="C">01
+    <p>7.Cual de estos maestros fueron parte del consejo jedi</p>
+    <select  name="question7">
+      <option value="A">Mace Windu.</option>
+      <option value="B">Depa Billaba.</option>
+      <option value="C">Doku</option>
+
+    </select>
+    <p>8.Que aprendices tuvo Darth sidious</p>
+    <input type="checkbox" name="question8" value="A">Darth Vader
+    <input type="checkbox" name="question8" value="C">Darth Revan
+    <input type="checkbox" name="question8" value="D">Darth maul
+    <p>Que opina de la orden de dos impuesta por Darth bane?</p>
+    <textarea name="question9" rows="8" cols="40"></textarea>
+    <p>Que moraleja nos da la historia de darth pleguis el sabio?</p>
+    <textarea name="question10" rows="8" cols="40"></textarea>
+    <pre>
+      <input type="submit" name="sub" value="Enviar Respuestas"> <input type="reset" name="res" value="limpiar">
+    </pre>
+
 </pre>
 </form>
   </body>
