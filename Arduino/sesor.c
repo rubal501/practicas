@@ -1,7 +1,7 @@
 int Sensor = A0;
-int Rojo = 11;
-int Amarillo = 12;
-int Verde = 13;
+int Rojo = 10;
+int Amarillo = 9;
+int Verde = 8;
 int Lectura;
 void setup() {
   // put your setup code here, to run once:
@@ -18,22 +18,18 @@ void loop() {
   Lectura = analogRead(Sensor);
   Serial.print("analog.Read = ");
   Serial.println(Lectura);
-  if(Lectura <= 150){
+  if(Lectura >= 400 && Lectura <500 ){
     digitalWrite(Verde, HIGH);
-    delay(1000);
-    digitalWrite(Verde, LOW);
-    }
-   if(Lectura> 150 || Lectura<180){
-    digitalWrite(Amarillo, HIGH);
-    delay(1000);
-    digitalWrite(Amarillo, LOW);
-     
-   }
-   if(Lectura>=180 ){
-    digitalWrite(Rojo, HIGH);
-    delay(1000);
-    digitalWrite(Rojo, LOW);
-   }
-   delay(500);
   }
+  if(Lectura >= 500 && Lectura <600 ){
+    digitalWrite(Amarillo, HIGH);
+  }
+  if(Lectura > 600){
+    digitalWrite(Rojo, HIGH);
+  }
+  delay(300);
+  digitalWrite(Verde, LOW);
+  digitalWrite(Amarillo, LOW);
+  digitalWrite(Rojo, LOW);
+}
     
