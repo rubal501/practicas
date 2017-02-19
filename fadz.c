@@ -1,32 +1,22 @@
-int ledRojo = 8;int ledVerde = 9; ledAmarillo = 10;
-int mssg = 0; //variable para guardar el mensaje
-
+#include<SoftwareSerial.h>
+SoftwareSerial BT(10,11);
+int led = 13; 
+int data;
  
 void setup()
 {
-   pinMode(ledRojo, OUTPUT);
-   pinMode(ledAmarillo, OUTPUT);
-   pinMode(ledVerde, OUTPUT); //establecemos 13 como salida
+   BT.begin(9600);
+   pinMode(led, OUTPUT); //establecemos 13 como salida
    Serial.begin(9600); //iniciando Serial
 }
  
-void loop()
-{
-   if (Serial.available() > 0)
-   {
-      mssg = Serial.read(); //leemos el serial
- 
-      if(mssg == 'r')
-      {
-         digitalWrite(ledRojo, HIGH); //si entra una 'e' encendemos
-      }
-      else if(mssg == 'a')
-      {
-         digitalWrite(ledAmarillo, HIGH); //si entra una 'a' apagamos
-      }
-      else if (mssg = 'v')
-      {
-      	digitalWrite(ledVerde, HIGH);
-      }
-   }
-}
+void loop(){
+  if(BT.available()){
+    data = BT.read();
+    Serial.println(data);
+    
+    }
+  
+  }
+
+    
