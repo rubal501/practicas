@@ -30,7 +30,10 @@ void MoverHaciaAdelante(void){
   digitalWrite(M2dir1, HIGH);
   digitalWrite(motor1, HIGH);
   digitalWrite(motor2, HIGH);
-  delay(10000);
+}
+void Frenar (void){
+  digitalWrite(motor1, LOW);
+  digitalWrite(motor2, LOW);
 }
 void MoverHaciaAtras(void){
   digitalWrite(motor1, LOW);
@@ -42,7 +45,6 @@ void MoverHaciaAtras(void){
   digitalWrite(M2dir1, LOW);
   digitalWrite(motor1, HIGH);
   digitalWrite(motor2, HIGH);
-  delay(10000);
 
 }
 
@@ -50,12 +52,17 @@ void MoverHaciaAtras(void){
 void loop() {
   if(BT.available() > 0)  //revisa si se recibe datos
    {
-      dato = BT.read();
-      if(dato == '1')
-         MoverHaciaAdelante();
-      else if(dato == '0')
-         MoverHaciaAtras();    
+      switch(dato){
+        case '1':
+          MoverHaciaAdelante();
+        case '2':
+          MoverHaciaAtras();
+        case '0':
+          Frenar();
+        default:
+          Frenar();
+      }
    }
 
 }
-//NOTA AL CALCE: puede que sea mas eficaz si uso un switch
+//NOTA AL CALCE: Crear funciones para desplazarce a los lados
