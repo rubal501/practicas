@@ -53,11 +53,11 @@ void loop() {
   if(BT.available() > 0)  //revisa si se recibe datos
    {
       switch(dato){
-        case '1':
+        case 'a':
           MoverHaciaAdelante();
-        case '2':
+        case 'b':
           MoverHaciaAtras();
-        case '0':
+        case 'f':
           Frenar();
         default:
           Frenar();
@@ -65,4 +65,3 @@ void loop() {
    }
 
 }
-//NOTA AL CALCE: Crear funciones para desplazarce a los lados
